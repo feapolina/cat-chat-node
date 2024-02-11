@@ -1,0 +1,141 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  background-color: #090912;
+  color: white;
+}
+
+body {
+  height: 95dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #090912;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+  flex-grow: 1;
+}
+
+#mensagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 55%;
+  background: url("./assets/background.png");
+  flex-grow: 1;
+  width: 100%;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.mensagem {
+  background-color: #eaeaea;
+  width: 85%;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#mensagens > .mensagem:last-of-type {
+  background-color: #334155;
+  width: 10%;
+}
+
+#envio-mensagens {
+  background-color: #eaeaeaea;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 40%;
+  max-height: 3rem;
+  & > input {
+    background-color: #fff;
+    font-size: 1.3rem;
+    color: black;
+    flex-grow: 1;
+    padding: 0.5rem 0.3rem;
+    margin-left: 0.7rem;
+    border: none;
+    border-radius: 20px;
+  }
+  & > button {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #a3e635;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    &:hover {
+      background-color: #73a326;
+    }
+  }
+  button > span {
+    background-color: transparent;
+    font-size: 2rem;
+    color: #000;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+  }
+}
+#dataMensagem {
+  display: flex;
+  background: transparent;
+  margin-top: 0.2rem;
+}
+
+#dataMensagem > #diaMensagem {
+  color: #94a3b8;
+  background-color: transparent;
+}
+#status-aplicacao {
+  padding: 5px;
+  color: #64748b;
+}
+#status-aplicacao span {
+  color: lime;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
