@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NodeJS Chat</title>
+    <title>CatChat</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/.svg" />
 
@@ -31,18 +31,26 @@
           <p id="diaMensagem">Hoje</p>
         </div>
       </ul>
-      
+
       <div id="envio-mensagens">
         <input
           id="texto"
-          placeholder="Digite alguma coisa..."
           autocomplete="off"
+          placeholder="Digite alguma coisa..."
           autofocus
         />
         <button id="enviar"><span class="bi bi-send"></span></button>
       </div>
       <div id="status-aplicacao">
-        <p><span class="bi bi-circle-fill"> </span>Conectado...</p>
+        <p>
+          <span class="bi bi-circle-fill"> </span>Conectado...
+        </p>
+      </div>
+      <div class="credits">
+        <p>
+          Made with love by Felipe Apolina
+          <span class="bi bi-heart-fill"></span>
+        </p>
       </div>
     </main>
     <script src="/socket.io/socket.io.js"></script>

@@ -50,16 +50,25 @@ main {
 }
 
 .mensagem {
-  background-color: #eaeaea;
-  width: 85%;
+  background-color: #334155;
+  width: fit-content;
   margin: 1rem 0.5rem;
   padding: 0.5rem;
   border-radius: 10px;
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #mensagens > .mensagem:last-of-type {
   background-color: #334155;
-  width: 10%;
+  width: fit-content;
 }
 
 #envio-mensagens {
@@ -72,10 +81,10 @@ main {
   max-height: 3rem;
   & > input {
     background-color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: black;
     flex-grow: 1;
-    padding: 0.5rem 0.3rem;
+    padding: 0.5rem 0.7rem;
     margin-left: 0.7rem;
     border: none;
     border-radius: 20px;
@@ -138,4 +147,14 @@ main {
   100% {
     opacity: 0;
   }
+}
+
+.credits {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.credits p {
+  color: #8a8b8d;
 }
