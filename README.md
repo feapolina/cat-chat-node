@@ -1,6 +1,6 @@
 # CatChat
 ![Imagem do meu projeto](./img.png)
- Projeto feito com NodeJS, utilizando Express e Socket.io.
+ Projeto feito com NodeJS, utilizando Express e WebSockets.
 
 ## Recursos Principais
 - Possibilidade de criar um canal de comunicação na própria rede, capaz de enviar e receber mensagens de texto.
@@ -27,7 +27,7 @@ Vá para o diretorio do projeto
 ## Tecnologias Utilizadas
 
 ### Back end:
-NodeJS com Express para criação da lógica da aplicação.
+NodeJS com Express e WebSockets para criação da lógica da aplicação.
 
 ### Front end:
 - HTML, CSS
